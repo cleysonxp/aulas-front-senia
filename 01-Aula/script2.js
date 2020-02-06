@@ -4,26 +4,48 @@
 
 const $calcular = document.getElementById('calcular');
 
-function calcularMedia(){
+const calcularMedia = (n1,n2) =>(parseInt(n1) + parseInt(n2))/2;
+
+const verificarSituacao = (media) => media >= 5 ? "Aprovado" : "Reprovado";
+
+const exibirMedia = () =>{
     const $nome = document.getElementById('nome');
-    const $nota1 = document.getElementById('nota1');
-    const $nota2 = document.getElementById('nota2');
+    const nota1 = document.getElementById('nota1').value;
+    const nota2 = document.getElementById('nota2').value;
     const $media = document.getElementById('media');
     const $situacao = document.getElementById('situacao');
 
-    const media = (parseInt ($nota1.value) + parseInt ($nota2.value))/2;
+    const media = calcularMedia (nota1, nota2);
 
-    if(media >= 5 ){
-        $situacao.value ="Aproado";
-        $situacao.classList.remove('reprovado');
-        $situacao.classList.add('aprovado');
-    }else{
-        $situacao.value ="Reprovado";
-        $situacao.classList.remove('aprovado');
-        $situacao.classList.add('reprovado');
-    }
-
+    $situacao.value = verificarSituacao(media);
     $media.value = media;
 }
 
-$calcular.addEventListener('click', calcularMedia);
+const calcularConceito = () =>{
+    const media = document.getElementById('media').value;
+    const $conceito = document.getElementById('conceito');
+    if(media == 10){
+        $conceito.value ="A";
+    }
+    else if(media > 7 && media <10){
+        $conceito.value = "B";
+    } 
+    else if(media > 4 && media < 9){
+        $conceito.value = "C";
+    }
+    else if(media > 2 && media < 6){
+        $conceito.value = "D";
+    }
+    else if(media >= 0 && media < 4){
+        $conceito.value = "E"; 
+    }
+    else{ 
+    }
+}
+
+const calcular = () => {
+    exibirMedia();
+    calcularConceito();
+}
+
+$calcular.addEventListener('click', calcular);
