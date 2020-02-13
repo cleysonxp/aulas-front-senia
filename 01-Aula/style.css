@@ -1,3 +1,7 @@
+.containerT{
+    display: none;
+    flex-direction: column;
+}
 
 .aprovado{
     color: green;
@@ -8,4 +12,14 @@
     color: red;
     margin: 5px;
     border: none;
+}
+
+.containerT{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.exibir{
+    display: grid;
 }

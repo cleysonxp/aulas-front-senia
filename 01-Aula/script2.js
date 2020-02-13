@@ -3,6 +3,9 @@
 // const $nome = document.querySelectorAll("#nome");
 
 const $calcular = document.getElementById('calcular');
+const $exibir = document.getElementById('exibir');
+const $ocultar = document.getElementById('ocultar');
+const $containerT = document.querySelector('.containerT');
 
 const calcularMedia = (n1,n2) =>(parseInt(n1) + parseInt(n2))/2;
 
@@ -24,7 +27,7 @@ const exibirMedia = () =>{
 const calcularConceito = () =>{
     const media = document.getElementById('media').value;
     const $conceito = document.getElementById('conceito');
-    if(media == 10){
+    if(media == 10){ 
         $conceito.value ="A";
     }
     else if(media > 7 && media <10){
@@ -43,9 +46,14 @@ const calcularConceito = () =>{
     }
 }
 
-const calcular = () => {
+const exibirResult = () => {
     exibirMedia();
     calcularConceito();
 }
 
-$calcular.addEventListener('click', calcular);
+const exibir = ( el ) => el.classList.add ('exibir');
+const ocultar = ( el ) => el.classList.remove ('exibir');
+
+$calcular.addEventListener('click', exibirResult);
+$exibir.addEventListener('click',( )=> exibir ($containerT));
+// $ocultar.addEventListener('click',( )=> ocultar ($containerT));
