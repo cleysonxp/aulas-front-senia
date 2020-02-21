@@ -78,22 +78,3 @@ const exibirDados = ( el,cliente ) =>{
 const $resultados = document.getElementById('resultados');
 
 clientes.forEach ( cliente => exibirDados ($resultados, cliente));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

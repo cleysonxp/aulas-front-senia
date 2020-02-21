@@ -1,6 +1,6 @@
 body{
     padding-top: 70px;
-
+    background-color: darkgray;
 }
 
 .containerCorpo{
@@ -8,8 +8,20 @@ body{
     height: 500px;
     margin: auto;
     background-color: darkcyan;
+    text-align: center;
 }
 
 
+#estado{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+}
 
-/*  */
+.city{
+    width: 450px;
+    height: 400px;
+    background-color: thistle;
+    margin: auto;
+    margin-top: 20px;
+}

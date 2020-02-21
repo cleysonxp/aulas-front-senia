@@ -5724,3 +5724,28 @@ const cidades = [
       ]
     }
   ]
+  const $select = document.getElementById('estado');
+
+const opcaoEstado = ($select, cidades) =>{
+
+  cidades.forEach( (estado) =>{
+
+    $select.innerHTML += `
+      <option value="${estado.nome}">${estado.nome}</option>
+    `
+    estado.nome
+  });
+}
+
+// const exibirCidades = (cidades, citys) =>{
+
+//   console.log(cidades.filter (sel => citys ));
+// }
+
+
+
+console.log($select);
+
+opcaoEstado($select, cidades);
+
+$select.addEventListener('change', exibirCidades);
