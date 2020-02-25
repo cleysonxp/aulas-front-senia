@@ -5724,28 +5724,61 @@ const cidades = [
       ]
     }
   ]
-  const $select = document.getElementById('estado');
 
-const opcaoEstado = ($select, cidades) =>{
+const $estados = document.getElementById("estados");
+const $cidades = document.getElementById("city");
 
-  cidades.forEach( (estado) =>{
-
-    $select.innerHTML += `
-      <option value="${estado.nome}">${estado.nome}</option>
-    `
-    estado.nome
+const opcoesEstados = (elemento, cidades) =>{
+  cidades.forEach ( ( estado ) => {
+    elemento.innerHTML += `
+      <option value="${ estado.sigla }">${ estado.nome }</option>
+    `;
   });
 }
 
-// const exibirCidades = (cidades, citys) =>{
+const limpaCidades = ( elemento ) => { elemento.innerHTML = " " };
 
-//   console.log(cidades.filter (sel => citys ));
-// }
+const getCidades = ( estado, cidades ) => {
+  return ( cidades.filter( cidade => cidade.sigla == estado )[0].cidades );
+}
 
+const exibirCidades = ( cidades, elemento) => {
+  let contador = 1;
+  cidades.forEach ( ( cidade ) =>{
 
+    if( ( contador % 2 ) == 0 ){
+      elemento.innerHTML += `
+        <div class="city">
+          <div class="numero">    
+            ${contador}
+          </div>
+          <div class="cidadeNumeroPar">
+            ${cidade}
+          </div>
+        </div>
+      `;
+    }
+    else {
+      elemento.innerHTML += `
+        <div class="city">
+          <div class="numero">    
+            ${contador}
+          </div>
+          <div class="cidadeNumeroImpar">
+            ${cidade}
+          </div>
+        </div>
+      `;
+    }
 
-console.log($select);
+    contador ++;
+  } );
+}
 
-opcaoEstado($select, cidades);
+const atualiza = () => {
+  limpaCidades( $cidades );
+  exibirCidades( getCidades ( $estados.value, cidades ), $cidades );
+};
 
-$select.addEventListener('change', exibirCidades);
+opcoesEstados( $estados, cidades );
+$estados.addEventListener('change', atualiza);
