@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Respansividade</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="js/jquery.js"></script>
+
+        <script>
+            $(document).ready(function(){
+
+                
+
+                // Function para o click do menu Mobile
+                $('#iconeMenu').click(function(){
+                    $('#menuMobile').fadeToggle(1000);
+                    
+
+                });
+
+                // function para fechar no item
+                $('.itemMenu').click(function(){
+                    $('#menuMobile').fadeToggle();
+                });
+
+            });
+        
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <div class="containerCenter center">
+
+                <nav id="containerMenuMobile">
+                    <div id="iconeMenu">
+
+                    </div>
+                    <div id="menuMobile">
+                        <ul>
+                            <li class="menuItem">Menu</li>
+                            <li class="menuItem">Menu</li>
+                            <li class="menuItem">Menu</li>
+                            <li class="menuItem">Menu</li>
+                            <li class="menuItem">Menu</li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div id="logo">
+
+                </div>
+                <!-- Desktop -->
+                <nav id="containerMenu">
+                    <ul id="menu">
+                        <li >Menu1</li>
+                        <li>Menu1</li>
+                        <li>Menu1</li>
+                        <li>Menu1</li>
+                        <li>Menu1</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="content" class="heightAuto center" >
+            <section id="empresa" class="heightAuto center">
+                <h1>Empresa</h1>
+                <div class="conteudoEmpresa">
+
+                </div>
+                <div class="conteudoEmpresa">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, quibusdam modi eum dolorum tempore fuga provident. Illum ipsam provident quia, fugiat officia pariatur eaque ducimus.</p>
+                </div>
+                <div class="conteudoEmpresa">
+
+                </div>
+                <div class="conteudoEmpresa">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio excepturi debitis placeat ipsa,fugiat corporis. Reprehenderit officia, minima ad qui sed rem fugiat, deleniti adipisci velit.
+                    </p>
+                    
+                </div>
+            </section>
+            <section id="servicos" class="heightAuto center">
+                <h1>Serviços</h1>
+                <div id="servicoTexto" class="heightAuto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum commodi cupiditate non voluptatibus laudantium a accusantium perferendis provident tenetur, nam voluptatum, fugiat placeat molestiae omnis ex architecto. Sequi, odit modi?
+                    </p>
+                </div>
+                <div id="servicoImagem">
+
+                </div>
+            </section>
+            <section id="localizacao" class="heightAuto center">
+                <h1>Localização</h1>
+                <div id="localizacaoTextoLeft" class="heightAuto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quia et, optio, ullam at quasi possimus alias neque commodi maiores beatae, nulla consequatur labore eaque aut ratione laudantium dicta itaque?
+                    </p>
+                </div>
+                <div id="localizacaoImagem">
+                    
+                </div>
+                <div id="localizacaoTextoRight" class="heightAuto">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore error nisi laboriosam, magnam iste voluptas repellat non modi atque, impedit voluptatem temporibus maxime expedita consequuntur ipsa consequatur quidem. Officia, assumenda.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <footer></footer>
+
+        
+    </body>
+</html>

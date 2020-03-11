@@ -10,6 +10,7 @@ const trocarImagem = (elemeto , imagem ) =>{
 
 const lampadaLigada = () => trocarImagem($lampada,"./img/ligada.jpg");
 const lampadaDesligada = () => trocarImagem($lampada,"./img/desligada.jpg");
+
 const estadoLampda = () => !Boolean($lampada.src.match('desligada'));
 
 const ligaDesliga = () => {
