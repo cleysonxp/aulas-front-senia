@@ -14,24 +14,19 @@ const troca = (elemento, imag) =>{
 
 const ligarVerde = () => troca($sema,"./img/verde.png");
 const ligarVermelho = () => troca($sema,"./img/vermelho.png");
-const ligarAmare = () => troca($sema,"./img/amarelo.png");
+const ligarAmarelo = () => troca($sema,"./img/amarelo.png");
 
 let id;
-
 const automatico = () =>{
-    if(id == undefined){
-        setInterval(ligarVermelho,500);
-        
-        // setInterval(ligarAmare,500);
-        // setInterval(ligarVerde,500);
-    }
+    ligarVerde();
+    setInterval(ligarAmarelo, 2000);
+    setInterval(ligarVermelho,4000);
 }
 
 const parar = () => id = clearInterval(id);
 
 
-$automatico.addEventListener('click', automatico);
 $verde.addEventListener('click', ligarVerde);
 $vermelho.addEventListener('click', ligarVermelho);
-$amarelo.addEventListener('click', ligarAmare);
-// document.getElementById('automatico').addEventListener('click',parar)
+$amarelo.addEventListener('click', ligarAmarelo);
+$automatico.addEventListener('click',automatico);
