@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 10vh 85vh 5vh;
+}
+
+header{
+    font: bold 5vh/10vh serif;
+    text-align: center;
+    /* background-color: brown; */
+}
+
+main{
+    display: grid;
+    grid-template-columns: 35vw 35vw;
+    justify-content: center;
+    /* background-color: cadetblue; */
+}
+
+footer{
+    font: bolder 2vh/5vh serif;
+    text-align: center;
+    /* background-color:chartreuse ; */
+}
+
+.map-imagem, .info{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkorange; */
+}
+
+
+svg{
+    height: 80vh;
+}
+
+g{
+    stroke: white;
+    stroke-width: 300px;
+}
+
+g:hover{
+    fill: red;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.estado{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font: bold 4vh/10vh serif;
+    height: 10vh;
+    margin-bottom: 5vh;
+}
+
+.card{
+    height: 15vh;
+    width: 20vw;
+    text-align: center;
+    color: white;
+    margin-bottom: 3vh;
+}
+
+.suspeitos{
+    background-color: #23B7E5;
+}
+
+.confirmados{
+    background-color: #f39c12;
+}
+
+.mortes{
+    background-color: #e74c3c;
+}
+
+.numeros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: bolder 8vh serif;
+}
+
+.titulos{
+    font: bolder 3vh/5vh serif;
+}
+
+
+
+
+
