@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#containerCorpo{
+    width: 1400px;
+    min-height:2000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+}
+
+#superHeroes{
+    width: 1000px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blueviolet;
+    margin-bottom: 100px;
+}
+
+#caixa-pesquisa{
+    width: 500px;
+    height: 54px;
+    /* background-color: chocolate;  */
+    margin-left: 800px;
+    margin-bottom: 50px;
+    border-radius: 27px;
+}
+
+#pesquisa, #input-pesquisa{
+    width: 440px;
+    height: 50px;
+    /* background-color: indianred; */
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+    float: left;
+    font-size: 22px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+
+#lupa{
+    width: 60px;
+    height: 50px;
+    background-color: black;
+    float: left;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
+    background-image:url(icones/tools-and-utensils.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#heroi-nome{
+    width: 700px;
+    height: 80px;
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#imagemDoHeroe{
+    width: 500px;
+    height: 600px;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    /* float: left; */
+}
+
+#informacoes{
+    width: 650px;
+    min-height: 500px;
+    height: auto;
+    /* float: left; */
+    background-color: crimson;
+}
+
+#powerStats{
+    width: 400px;
+    height: 600px;
+    background-color: thistle;
+    margin-left: 50px;
+}
+
+#powerStats > h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.powerStats_item{
+    width: inherit;
+    height: 70px;
+    /* background-color: indigo; */
+    line-height: 70px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    /* color: white; */
+}
