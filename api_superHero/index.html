@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
-        
+        <!-- <script src="api.js"></script> -->
     </head>
     <body>
         <div id="containerCorpo">
@@ -26,30 +26,42 @@
             <!-- POWERSTATS -->
             <div id="powerStats">
                 <h1>PowerStats</h1>
-                <div class="powerStats_item">
-                   <h1 id="intelligence">intelligence</h1> 
+                <div class="linha">
+                    <div class="texto">intelligence: </div>
+                    <div class="resultado" id="intelligence"></div>
                 </div>
-                <div class="powerStats_item">
-                    <h1 id="strength">strength</h1>
+                <div class="linha">
+                    <div class="texto">strength: </div>
+                    <div class="resultado" id="strength"></div>
                 </div>
-                <div class="powerStats_item">
-                    <h1 id="speed">speed</h1>
+                <div class="linha">
+                    <div class="texto">speed: </div>
+                    <div class="resultado" id="speed"></div>
                 </div>
-                <div class="powerStats_item">
-                    <h1 id="durability">durability</h1>
+                <div class="linha">
+                    <div class="texto">durability: </div>
+                    <div class="resultado" id="durability"></div>
                 </div>
-                <div class="powerStats_item">
-                    <h1 id="power">power</h1>
+                <div class="linha">
+                    <div class="texto">power: </div>
+                    <div class="resultado" id="power"></div>
                 </div>
-                <div class="powerStats_item">
-                    <h1 id="combat">combat</h1>
+                <div class="linha">
+                    <div class="texto">combat: </div>
+                    <div class="resultado" id="combat"></div>
                 </div>
 
             </div>
 
             <!-- BIOGRAFIA -->
             <div id="biografia">
-
+                <h1>Biografia</h1>
+                <div class="linha_biografia">Alignment: <span id="alignment" ></span> </div>
+                <div class="linha_biografia">AlterEgos: <span id="alter-egos" ></span> </div>
+                <div class="linha_biografia">First Appearance: <span id="first-appearance" ></span> </div>
+                <div class="linha_biografia">Full Name: <span id="full-name" ></span> </div>
+                <div class="linha_biografia">Place Of Birth: <span id="place-of-birth" ></span> </div>
+                <div class="linha_biografia">Publisher: <span id="publisher" ></span> </div>
             </div>
 
             <!-- APARENCIA -->
@@ -70,6 +82,6 @@
             </div>
         </div>
 
-        <script src="api.js"></script>
+        <script src="api.js"></script>        
     </body>
 </html>
