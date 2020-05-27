@@ -5,8 +5,8 @@ const $heroi = document.getElementById('input-pesquisa');
 
 
 const heroInfo = async (heroi) => {
-    // const url = `https://www.superheroapi.com/api.php/2702658359969943/search/${heroi}`;
-    const url = 'https://www.superheroapi.com/api.php/2702658359969943/search/batman';
+    const url = `https://www.superheroapi.com/api.php/2702658359969943/search/${heroi}`;
+    // const url = 'https://www.superheroapi.com/api.php/2702658359969943/search/batman';
     const results = await fetch( url );
     const json = await results.json();
     console.log(json);
@@ -28,16 +28,14 @@ const preencher = async ( e ) =>{
     document.getElementById('durability').innerHTML = e.results[0].powerstats.durability;
     document.getElementById('power').innerHTML = e.results[0].powerstats.power;
     document.getElementById('combat').innerHTML = e.results[0].powerstats.combat;
-
-
-    const info =
+    
 
     document.getElementById('alignment').innerHTML = e.results[0].biography.alignment;
     // document.getElementById('alter-egos').innerHTML = e.results[0].biography.alter-egos;
-    document.getElementById('first-appearance').innerHTML = e.results[0].biography.alignment;
-    document.getElementById('full-name').innerHTML = e.results[0].biography.alignment;
-    document.getElementById('place-of-birth').innerHTML = e.results[0].biography.alignment;
-    document.getElementById('publisher').innerHTML = e.results[0].biography.publisher;
+    // document.getElementById('first-appearance').innerHTML = e.results[0].biography.alignment;
+    // document.getElementById('full-name').innerHTML = e.results[0].biography.alignment;
+    // document.getElementById('place-of-birth').innerHTML = e.results[0].biography.alignment;
+    // document.getElementById('publisher').innerHTML = e.results[0].biography.publisher;
 
     
 }

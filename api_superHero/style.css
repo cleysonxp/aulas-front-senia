@@ -3,21 +3,25 @@
     padding: 0;
 }
 
-#containerCorpo{
-    width: 1400px;
-    min-height:2000px;
-    height: auto;
+.containe_corpo{
+    width: 1200px;
+    height: 1800px;
     margin-left: auto;
     margin-right: auto;
-    background-color: aquamarine;
+    background-color: grey;
+    padding-top: 50px;
 }
 
 #superHeroes{
     width: 1000px;
     height: 140px;
+    line-height: 140px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
     margin-left: auto;
     margin-right: auto;
-    background-color: blueviolet;
+    background-color: black;
     margin-bottom: 100px;
 }
 
@@ -25,7 +29,7 @@
     width: 500px;
     height: 54px;
     /* background-color: chocolate;  */
-    margin-left: 800px;
+    margin-left: 650px;
     margin-bottom: 50px;
     border-radius: 27px;
 }
@@ -56,23 +60,25 @@
     background-position: center;
 }
 
-#heroi-nome{
+.heroi_nome{
     width: 700px;
     height: 80px;
     line-height: 80px;
     font-size: 40px;
     text-align: center;
-    background-color: brown;
+    background-color: black;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     font-weight: bold;
+    color: white;
 }
+
 
 #imagemDoHeroe{
     width: 500px;
     height: 600px;
-    background-color: burlywood;
+    background-color: #696969;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -89,94 +95,71 @@
 
 #powerStats{
     width: 300px;
-    min-height: 60px;
+    min-height: 10px;
     height: auto;
-    /* height: 300px; */
-    background-color: thistle;
-    margin-left: 50px;
-    border: 1px solid black;
+    background-color: #696969;
+    margin-left: 30px;
+    /* border: 2px solid black; */
     float: left;
     margin-right: 30px;
-}
-
-
-
-#powerStats > h1{
-    text-align: center;
-    margin-bottom: 20px;
-    background-image: u;
-}
-
-.powerStats_item{
-    width: inherit;
-    height: 70px;
-    /* background-color: indigo; */
-    line-height: 70px;
-    padding-left: 10px;
+    /* padding-left: 20px; */
     box-sizing: border-box;
-    color: white;
 }
 
-#powerStats > h1{
-    width:inherit;
-    height: 40px;
-    padding-top: 12px;
-    box-sizing: border-box;
-    color: white;
-}
-
-.linha{
+.titulo_powerStats{
     width: 300px;
     height: 70px;
-    background-color: white;
+    line-height: 70px;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
 .texto{
-    width: 200px;
-    height: inherit;
+    width: 300px;
+    height: 7s0px;
     line-height: 70px;
-    background-color: lawngreen;
+    color: white;
+    font-size: 30px;
     padding-left: 20px;
     box-sizing: border-box;
-    font-size: 30px;
-    float: left;
+    /* float: left; */
 }
 
-.resultado{
-    width: 100px;
-    height: inherit;
-    float: left;
-    background-color: indianred;
-    /* text-align: center; */
-    line-height: 70px;
-    font-size: 30px;
-    color: white;
-}
-
-#biografia{
+.imagem{
     width: 500px;
-    min-height: 400px;
+    height: 600px;
+}
+
+.biography{
+    width: 500px;
+    min-height: 6px;
     height: auto;
-    background-color: indigo;
+    background-color: #696969;
     float: left;
+    /* margin-left: 20px; */
 }
 
-#biografia > h1 {
-    width: inherit;
-    height: 60px;
-    color: white;
-    text-align: center;
-    line-height: 60px;
-    background-color: violet;
-}
-
-.linha_biografia{
-    width: inherit;
+.biography_item{
+    width: 500px;
     min-height: 70px;
-    height: auto;
-    background-color: khaki;
-    padding-top: 20px;
-    box-sizing: border-box;
+    height: auto    ;
+    line-height: 70px;
+    /* background-color: indianred; */
+    color: white;
     font-size: 30px;
     padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+    /* background-color: khaki; */
+
+}
+
+.titulo_biography{
+    width: inherit;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
