@@ -1,7 +1,9 @@
 "use strict";
 
 // console.log("oi");
+
 const $heroi = document.getElementById('input-pesquisa');
+
 let DB = [
     {
         "intelligence": "",
@@ -143,22 +145,3 @@ batman ();
 
 
 $heroi.addEventListener('keyup', () => batman($heroi.value));
-
-
-//         "url": "TEXTO",
-//         "name": "TEXTO",
-
-//         
-
-//         "gender": "TEXTO",
-//         "race": "TEXTO",
-//         "height": "TEXTO",
-//         "weight": "TEXTO",
-//         "eye-color": "TEXTO",
-//         "hair-color": "TEXTO",
-
-//         "occupation": "TEXTO",
-//         "base": "TEXTO",
-
-//         "group-affiliation": "TEXTO",
-//         "relatives": "TEXTO",
