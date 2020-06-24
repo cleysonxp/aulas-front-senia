@@ -1,6 +1,6 @@
 "use stritc";
 const verificaCep = () => document.getElementById('cep').reportValidity();
-
+const nome = () => document.getElementById('nome').reportValidity();
 
 const encontrarCep = async (cep) => {
 
@@ -31,3 +31,5 @@ const maskCep = ($el) => {
 document.getElementById('cep').addEventListener('blur', (evento) => encontrarCep(cep.value));
 
 document.getElementById('cep').addEventListener('keyup', (evento) => maskCep(evento.target));
+
+document.getElementById('nome').addEventListener('keyup', (evento) => maskCep(evento.target));

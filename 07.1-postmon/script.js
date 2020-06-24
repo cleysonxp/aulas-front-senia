@@ -29,4 +29,4 @@ const maskCep = ( $el ) => {
 }
 
 $cep.addEventListener('blur', ( e ) => encontrarCep(e.target.value));
-$cep.addEventListener('keyup', ( e ) => maskCep (e.target));                           
+$cep.addEventListener('keyup', ( e ) => maskCep (e.target));
