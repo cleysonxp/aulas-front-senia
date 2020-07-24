@@ -23,6 +23,7 @@ body{
 
 .subtitulo{
     display: flex;
+    font: bold calc(10px + 1vw)/45px sans-serif;
     justify-content: space-between;
     padding: 2vw;
 }
@@ -35,7 +36,7 @@ body{
     font: bold calc (2px + 1vw) sans-serif;
     background-color: white;
     border: 1px solid #0058A0;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #0066B8;
     box-shadow: 0px 0px 3px black;
     cursor: pointer;
@@ -61,12 +62,46 @@ body{
     width: 50vw;
     margin: 10vh auto;
     background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.conteiner-modal.exibirModal{
+.exibirModal{
     opacity: 1;
     z-index: 5000;
 }
 
+.form{
+    display: grid;
+    grid-template-areas:
+    "nome nome nome nome"
+    "email email celular celular"
+    "endereco numero bairro bairro"
+    "cidade cidade estado cep";
+    gap: 10px;
+    padding: 1vw;
+}
 
+#nome { grid-area: nome;}
+#email { grid-area: email;}
+#celular { grid-area: celular;}
+#endereco { grid-area: endereco;}
+#numero { grid-area: numero;}
+#bairro { grid-area: bairro;}
+#cidade { grid-area: cidade;}
+#estado { grid-area: estado;}
+#cep { grid-area: cep;}
 
+.form > input {
+    width: 100%;
+}
+
+.acao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    font: bold calc(2px + 1vw) san-serif;
+    margin: 1vw;
+}
